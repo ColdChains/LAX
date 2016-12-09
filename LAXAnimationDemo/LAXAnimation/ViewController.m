@@ -41,6 +41,7 @@
 //点击Enter按钮
 - (IBAction)enterAction:(UIButton *)sender {
     
+    //添加默认切换动画
     [LAXAnimation defaultAnimationWithDuration:2 target:self.view.window];
     
     AnimationViewController *vc = [[AnimationViewController alloc] init];

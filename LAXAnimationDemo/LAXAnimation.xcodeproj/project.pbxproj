@@ -13,11 +13,11 @@
 		5746CEE01DF6AE21003A45CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5746CEDE1DF6AE21003A45CD /* LaunchScreen.storyboard */; };
 		5746CEF11DF6B0DC003A45CD /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746CEE81DF6B0DC003A45CD /* AnimationViewController.m */; };
 		5746CEF21DF6B0DC003A45CD /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5746CEE91DF6B0DC003A45CD /* AnimationViewController.xib */; };
-		5746CEF31DF6B0DC003A45CD /* LAXAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746CEEB1DF6B0DC003A45CD /* LAXAnimation.m */; };
 		5746CEF41DF6B0DC003A45CD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746CEED1DF6B0DC003A45CD /* TestViewController.m */; };
 		5746CEF51DF6B0DC003A45CD /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5746CEEE1DF6B0DC003A45CD /* TestViewController.xib */; };
 		5746CEF61DF6B0DC003A45CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746CEF01DF6B0DC003A45CD /* ViewController.m */; };
 		5746CEF91DF6B117003A45CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5746CEF71DF6B117003A45CD /* Main.storyboard */; };
+		57DDE5FF1DFA8531005F0B16 /* LAXAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DDE5FE1DFA8531005F0B16 /* LAXAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,14 +31,14 @@
 		5746CEE71DF6B0DC003A45CD /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		5746CEE81DF6B0DC003A45CD /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		5746CEE91DF6B0DC003A45CD /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
-		5746CEEA1DF6B0DC003A45CD /* LAXAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAXAnimation.h; sourceTree = "<group>"; };
-		5746CEEB1DF6B0DC003A45CD /* LAXAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAXAnimation.m; sourceTree = "<group>"; };
 		5746CEEC1DF6B0DC003A45CD /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		5746CEED1DF6B0DC003A45CD /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		5746CEEE1DF6B0DC003A45CD /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		5746CEEF1DF6B0DC003A45CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5746CEF01DF6B0DC003A45CD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5746CEF81DF6B117003A45CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57DDE5FD1DFA8531005F0B16 /* LAXAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAXAnimation.h; sourceTree = "<group>"; };
+		57DDE5FE1DFA8531005F0B16 /* LAXAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAXAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +71,12 @@
 		5746CECF1DF6AE21003A45CD /* LAXAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				57DDE5FC1DFA8531005F0B16 /* LAXAnimation */,
 				5746CED31DF6AE21003A45CD /* AppDelegate.h */,
 				5746CED41DF6AE21003A45CD /* AppDelegate.m */,
 				5746CEE71DF6B0DC003A45CD /* AnimationViewController.h */,
 				5746CEE81DF6B0DC003A45CD /* AnimationViewController.m */,
 				5746CEE91DF6B0DC003A45CD /* AnimationViewController.xib */,
-				5746CEEA1DF6B0DC003A45CD /* LAXAnimation.h */,
-				5746CEEB1DF6B0DC003A45CD /* LAXAnimation.m */,
 				5746CEEC1DF6B0DC003A45CD /* TestViewController.h */,
 				5746CEED1DF6B0DC003A45CD /* TestViewController.m */,
 				5746CEEE1DF6B0DC003A45CD /* TestViewController.xib */,
@@ -98,6 +97,15 @@
 				5746CED11DF6AE21003A45CD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57DDE5FC1DFA8531005F0B16 /* LAXAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				57DDE5FD1DFA8531005F0B16 /* LAXAnimation.h */,
+				57DDE5FE1DFA8531005F0B16 /* LAXAnimation.m */,
+			);
+			path = LAXAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DDE5FF1DFA8531005F0B16 /* LAXAnimation.m in Sources */,
 				5746CEF61DF6B0DC003A45CD /* ViewController.m in Sources */,
 				5746CEF11DF6B0DC003A45CD /* AnimationViewController.m in Sources */,
 				5746CED51DF6AE21003A45CD /* AppDelegate.m in Sources */,
-				5746CEF31DF6B0DC003A45CD /* LAXAnimation.m in Sources */,
 				5746CED21DF6AE21003A45CD /* main.m in Sources */,
 				5746CEF41DF6B0DC003A45CD /* TestViewController.m in Sources */,
 			);
@@ -333,6 +341,7 @@
 				5746CEE61DF6AE21003A45CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
