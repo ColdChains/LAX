@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,33 +18,39 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quX-hG-fPs">
-                                <frame key="frameInset" minX="138" minY="209" width="99" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quX-hG-fPs">
+                                <rect key="frame" x="136.5" y="266" width="47" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="enterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ou-HK-Oeb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phu-sA-v8S">
-                                <frame key="frameInset" minX="138" minY="331" width="99" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phu-sA-v8S">
+                                <rect key="frame" x="141" y="352" width="38" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Test"/>
                                 <connections>
                                     <action selector="testAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TmZ-Bp-y57"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xcode" translatesAutoresizingMaskIntoConstraints="NO" id="GnG-Ga-FRI">
-                                <frame key="frameInset" minX="144" minY="65" width="86" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xcode" translatesAutoresizingMaskIntoConstraints="NO" id="GnG-Ga-FRI">
+                                <rect key="frame" x="60" y="45" width="200" height="200"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.84482883296578559" green="1" blue="0.92181893226950584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="phu-sA-v8S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Vn-mD-GXo"/>
+                            <constraint firstItem="quX-hG-fPs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3qF-el-fx0"/>
+                            <constraint firstItem="GnG-Ga-FRI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8xF-Ub-VAa"/>
+                            <constraint firstItem="GnG-Ga-FRI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Er6-o3-5xj"/>
+                            <constraint firstItem="quX-hG-fPs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WUn-pL-bHw"/>
+                            <constraint firstItem="quX-hG-fPs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kPL-2J-UdP"/>
+                            <constraint firstItem="phu-sA-v8S" firstAttribute="top" secondItem="quX-hG-fPs" secondAttribute="bottom" constant="50" id="txd-ah-JbI"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="shakeImageView" destination="GnG-Ga-FRI" id="RHI-8p-Xtl"/>

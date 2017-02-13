@@ -25,11 +25,13 @@ static CATransition *defaultAnimation = nil;
     animation.delegate = self;
     animation.duration = kDuration;
     animation.timingFunction = UIViewAnimationCurveEaseInOut;
+    animation.type = typeArr[0];
+    animation.subtype = subtypeArr[0];
     
     if (type >= 0 && type < 12) {
         animation.type = typeArr[type];
     }
-    if (type >= 0 && type < 4) {
+    if (subtype >= 0 && subtype < 4) {
         animation.subtype = subtypeArr[subtype];
     }
     
@@ -123,14 +125,14 @@ static CATransition *defaultAnimation = nil;
     
 }
 
-// 点击按钮
+// 点击按钮1
 - (IBAction)buttonPressed:(UIButton *)sender {
     
     [self cutfromAnimationWithType:sender.tag - 101 AndSubType:self.subtype];
     
 }
 
-// 点击按钮
+// 点击按钮2
 - (IBAction)buttonPressed2:(UIButton *)sender {
     
     [self cutfromViewAnimation:sender.tag - 200];
