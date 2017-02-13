@@ -16,7 +16,7 @@
     CATransition *defaultAnimation = [CATransition animation];
     defaultAnimation.timingFunction = UIViewAnimationCurveEaseInOut;
     defaultAnimation.duration = duration;
-    defaultAnimation.type = @"pageCurl";
+    defaultAnimation.type = @"pageCurl"; 
     defaultAnimation.subtype = kCATransitionFromBottom;
     
     //defaultAnimation.delegate = self;
