@@ -16,7 +16,7 @@
     CATransition *defaultAnimation = [CATransition animation];
     defaultAnimation.timingFunction = UIViewAnimationCurveEaseInOut;
     defaultAnimation.duration = duration;
-    defaultAnimation.type = @"pageCurl"; 
+    defaultAnimation.type = @"pageCurl";
     defaultAnimation.subtype = kCATransitionFromBottom;
     
     //defaultAnimation.delegate = self;
@@ -25,11 +25,31 @@
     
 }
 
++ (CATransition *)tuijiAnimationWithDirection:(LAXDirection)dir {
+    return [self animationWithDuration:kDuration target:kWindow delegate:nil type:1 subtype:dir];
+}
+
++ (CATransition *)fugaiAnimationWithDirection:(LAXDirection)dir {
+    return [self animationWithDuration:kDuration target:kWindow delegate:nil type:3 subtype:dir];
+}
+
++ (CATransition *)bowenAnimation {
+    return [self animationWithDuration:kDuration target:kWindow delegate:nil type:4 subtype:0];
+}
+
++ (CATransition *)xishouAnimationWithDirection:(LAXDirection)dir {
+    return [self animationWithDuration:kDuration target:kWindow delegate:nil type:5 subtype:dir];
+}
+
++ (CATransition *)lifangtiAnimationWithDirection:(LAXDirection)dir {
+    return [self animationWithDuration:kDuration target:kWindow delegate:nil type:7 subtype:dir];
+}
+
 + (CATransition *)animationWithDuration:(NSTimeInterval)duration target:(UIView *)view delegate:(nullable id)delegate type:(NSInteger)type subtype:(NSInteger)subtype {
     
-    //NSArray *titleArr = @[@"淡化", @"推挤", @"揭开", @"覆盖", @"波纹", @"吸收", @"翻转", @"立方体", @"翻页", @"反翻页", @"镜头开", @"镜头关"];
+    //NSArray *titleArr = @[@"0淡化", @"1推挤", @"2揭开", @"3覆盖", @"4波纹", @"5吸收", @"6翻转", @"7立方体", @"8翻页", @"9反翻页", @"10镜头开", @"11镜头关"];
     NSArray *typeArr = @[kCATransitionFade, kCATransitionPush, kCATransitionReveal, kCATransitionMoveIn, @"rippleEffect", @"suckEffect", @"oglFlip", @"cube", @"pageCurl", @"pageUnCurl", @"cameraIrisHollowOpen", @"cameraIrisHollowClose"];
-    NSArray *subtypeArr = @[kCATransitionFromLeft, kCATransitionFromBottom, kCATransitionFromRight, kCATransitionFromTop];
+    NSArray *subtypeArr = @[kCATransitionFromTop, kCATransitionFromLeft, kCATransitionFromBottom, kCATransitionFromRight];
     
     CATransition *defaultAnimation = [CATransition animation];
     defaultAnimation.delegate = delegate;
